@@ -1,0 +1,31 @@
+{
+  "name": "movie-backend",
+  "version": "1.0.0",
+  "description": "Movie App Backend with Express, MongoDB Atlas, and Mongoose",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js --legacy-watch",
+    "start": "node src/server.js",
+    "seed": "node database/seed/seed.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mongodb",
+    "mongoose",
+    "movie-app",
+    "backend"
+  ],
+  "author": "Abhinav Singh",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
