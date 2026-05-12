@@ -3,7 +3,7 @@ import { Movie, MovieInput } from '../models/movie.model';
 
 @Injectable({ providedIn: 'root' })
 export class MovieService {
-  private readonly apiUrl = 'http://localhost:5000/api/movies';
+  private readonly apiUrl = 'http://localhost:5001/api/movies';
   private movies = signal<Movie[]>([]);
   searchTerm = signal('');
   sortOption = signal<'rating' | 'title'>('rating');
